@@ -7,4 +7,9 @@
         @apply cursor-pointer;
     }
 
+    .nav-full-element{
+        @apply cursor-pointer origin-left hover:underline hover:scale-105
+        transition-transform
+    }
+
 }

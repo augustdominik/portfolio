@@ -7,9 +7,9 @@ export default function NavFullscreen({ showNavFullscreen, setShowNavFullscreen 
             + ' pl-10'}>
             <ul className={"text-white mt-24 [&>*]:mb-4 [&>*]:text-xl " 
                 + (showNavFullscreen ? 'opacity-100' : 'opacity-0')}>
-                <li>Hjem</li>
-                <li>Arbejde</li>
-                <li>Kontakt</li>
+                <li className="nav-full-element">Hjem</li>
+                <li className="nav-full-element">Arbejde</li>
+                <li className="nav-full-element">Kontakt</li>
             </ul>
         </div>
     );

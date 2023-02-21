@@ -2,7 +2,7 @@ import { HiOutlineMenu, HiX } from 'react-icons/hi';
 
 export default function NavBar({showNavFullscreen, toggleNavFullscreen}:{showNavFullscreen:boolean, toggleNavFullscreen: () => void}) {
     return (
-        <div className={"flex flex-col w-full justify-items-center pl-10 pr-10 text-2xl transition-colors sticky top-0 z-50 " 
+        <div className={"flex flex-col w-full justify-items-center pl-10 pr-10 text-2xl transition-colors z-50 sticky top-0 " 
             + (showNavFullscreen ? 'text-white bg-none' : 'text-black bg-white')}>
             <div className="flex justify-between sm:grid sm:grid-cols-2 mt-6 mb-2">
                 <div className="flex justify-start gap-12">
