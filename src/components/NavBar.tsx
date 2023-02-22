@@ -1,4 +1,5 @@
 import { HiOutlineMenu, HiX } from 'react-icons/hi';
+import { Link } from 'react-router-dom';
 
 export default function NavBar({showNavFullscreen, toggleNavFullscreen}:{showNavFullscreen:boolean, toggleNavFullscreen: () => void}) {
     return (
@@ -7,10 +8,10 @@ export default function NavBar({showNavFullscreen, toggleNavFullscreen}:{showNav
             <div className="flex justify-between sm:grid sm:grid-cols-2 mt-6 mb-2">
                 <div className="flex justify-start gap-12">
                     <a className="nav-element">August Dominik</a>
-                    <a className="nav-element hidden sm:block">Arbejde</a>
                 </div>
-                <div className="flex justify-end">
-                    <a className="nav-element hidden sm:block">Info</a>
+                <div className="flex justify-end gap-8">
+                    <Link className='nav-element hidden sm:block' to={'/'}>Projekter</Link>
+                    <Link className="nav-element hidden sm:block" to={'/teknologier'}>Teknologier</Link>
                     <div className='flex items-center justify-center cursor-pointer sm:hidden'
                         onClick={() => toggleNavFullscreen()}>
                         {showNavFullscreen 

@@ -8,8 +8,8 @@ export default function NavFullscreen({ showNavFullscreen, setShowNavFullscreen 
             <ul className={"text-white mt-24 [&>*]:mb-4 [&>*]:text-xl " 
                 + (showNavFullscreen ? 'opacity-100' : 'opacity-0')}>
                 <li className="nav-full-element">Hjem</li>
-                <li className="nav-full-element">Arbejde</li>
-                <li className="nav-full-element">Kontakt</li>
+                <li className="nav-full-element">Projekter</li>
+                <li className="nav-full-element">Teknologier</li>
             </ul>
         </div>
     );
