@@ -81,6 +81,8 @@ const technologyIcons: Array<TechnologyIcon> = [
 ];
 
 
+
+
 function TechnologyIconElement({ technologyIcon }: { technologyIcon: TechnologyIcon }) {
     return (
         <div className="group cursor-pointer">
@@ -109,8 +111,8 @@ export default function Teknologier() {
                 <h1 className='text-3xl mb-4'>Teknologier</h1>
                 <p className='mb-4'>Nedenfor ses de teknologier jeg har erfaring med.</p>
                 <div className='grid grid-cols-3 sm:grid-cols-6 gap-8 '>
-                    {technologyIcons.map((technologyIcon) =>
-                    <TechnologyIconElement technologyIcon={technologyIcon} />
+                    {technologyIcons.map((technologyIcon, idx) =>
+                    <TechnologyIconElement key={idx} technologyIcon={technologyIcon} />
                                         )}
                 </div>
                 <p className='mb-20'> Hvis mine erfaringer vækker interesse, send mig gerne en email: <span className='underline decoration-cyan-500 cursor-pointer'>augustdrp@gmail.com</span></p>
