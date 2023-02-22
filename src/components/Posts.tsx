@@ -62,7 +62,7 @@ function Post({ blogPost }: { blogPost: BlogPost }) {
         <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}>
-            <div className="w-full border-black bg-gray-100 rounded-md pt-4 px-4 mb-4 items-center justify-center">
+            <div className="w-full border-black border-2 bg-gray-100 rounded-md pt-4 px-4 mb-4 items-center justify-center">
                 <img src={blogPost.imageLink[0]}></img>
             </div>
             <div className="flex justify-between items-center">

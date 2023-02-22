@@ -1,4 +1,4 @@
-import IconTypescript from 'react-devicon/typescript/plain';
+import { motion } from "framer-motion";
 
 interface TechnologyIcon {
     name: string,
@@ -6,7 +6,7 @@ interface TechnologyIcon {
     tooltip: string
 }
 
-const technologiIcons: Array<TechnologyIcon> = [
+const technologyIcons: Array<TechnologyIcon> = [
     {
         name: 'TypeScript',
         iconSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
@@ -21,36 +21,6 @@ const technologiIcons: Array<TechnologyIcon> = [
         name: 'Tailwind CSS',
         iconSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg',
         tooltip: 'Tailwind CSS'
-    },
-    {
-        name: 'C#',
-        iconSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg',
-        tooltip: 'C#'
-    },
-    {
-        name: 'Unity3D',
-        iconSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg',
-        tooltip: 'Unity3D'
-    },
-    {
-        name: 'Python',
-        iconSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
-        tooltip: 'Python'
-    },
-    {
-        name: 'NodeJS',
-        iconSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
-        tooltip: 'Unity3D'
-    },
-    {
-        name: 'Git',
-        iconSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-        tooltip: 'Git'
-    },
-    {
-        name: 'Vim',
-        iconSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-original.svg",
-        tooltip: 'Vim'
     },
     {
         name: 'CSS',
@@ -77,21 +47,74 @@ const technologiIcons: Array<TechnologyIcon> = [
         iconSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
         tooltip: 'FastAPI'
     },
-    
-]
+    {
+        name: 'Python',
+        iconSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
+        tooltip: 'Python'
+    },
+    {
+        name: 'NodeJS',
+        iconSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
+        tooltip: 'NodeJS'
+    },
+    {
+        name: 'Git',
+        iconSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+        tooltip: 'Git'
+    },
+    {
+        name: 'Vim',
+        iconSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-original.svg",
+        tooltip: 'Vim :)'
+    },
+    {
+        name: 'C#',
+        iconSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg',
+        tooltip: 'C#'
+    },
+    {
+        name: 'Unity3D',
+        iconSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg',
+        tooltip: 'Unity3D'
+    },
+
+];
+
+
+function TechnologyIconElement({ technologyIcon }: { technologyIcon: TechnologyIcon }) {
+    return (
+        <div className="group cursor-pointer">
+            <img src={technologyIcon.iconSrc} 
+                className='group-hover:scale-110
+                transition-transform duration-75'>
+            </img>
+            <div className=" scale-0 group-hover:scale-100 active:scale-100 
+                transition-all duration-75 min-w-max
+                bg-white border-b-2 border-black
+                origin-left
+                ">
+                {technologyIcon.tooltip}
+            </div>
+        </div>
+    )
+}
 
 
 export default function Teknologier() {
     return (
-        <div>
-            <h1 className='text-3xl mb-4'>Teknologier</h1>
-            <p className='mb-4'>Nedenfor ses de teknologier jeg har erfaring med.</p>
-            <div className='grid grid-cols-6 gap-8'>
-                {technologiIcons.map((technologiIcon) =>
-                    <img src={technologiIcon.iconSrc}></img>
-                )}
+        <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}>
+            <div>
+                <h1 className='text-3xl mb-4'>Teknologier</h1>
+                <p className='mb-4'>Nedenfor ses de teknologier jeg har erfaring med.</p>
+                <div className='grid grid-cols-3 sm:grid-cols-6 gap-8 '>
+                    {technologyIcons.map((technologyIcon) =>
+                    <TechnologyIconElement technologyIcon={technologyIcon} />
+                                        )}
+                </div>
+                <p className='mb-20'> Hvis mine erfaringer vækker interesse, send mig gerne en email: <span className='underline decoration-cyan-500 cursor-pointer'>augustdrp@gmail.com</span></p>
             </div>
-            <p className='mb-20'> Hvis mine erfaringer vækker interesse, send mig gerne en email: <span className='underline decoration-cyan-500 cursor-pointer'>augustdrp@gmail.com</span></p>
-        </div>
+        </motion.div>
     );
 }

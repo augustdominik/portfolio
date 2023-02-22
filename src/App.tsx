@@ -20,8 +20,7 @@ function App() {
 
     return (
         <div className="App flex flex-col items-center">
-            <NavFullscreen
-                showNavFullscreen={showNavFullscreen}
+            <NavFullscreen showNavFullscreen={showNavFullscreen}
                 setShowNavFullscreen={setShowNavFullscreen}
                 navElements={navElements}
             />
