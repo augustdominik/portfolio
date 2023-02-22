@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ErrorPage from './error-page';
 import Projekter from './routes/Projekter';
 import Teknologier from './routes/Teknologier';
+import Kontakt from './routes/Kontakt';
 
 const router = createBrowserRouter([
     {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
             {
                 path:'teknologier',
                 element: <Teknologier />
+            },
+            {
+                path:'kontakt',
+                element: <Kontakt />
             }
         ]
     }

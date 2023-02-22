@@ -3,6 +3,7 @@ import { Outlet } from 'react-router-dom';
 import NavBar from "./components/NavBar"
 import NavFullscreen from './components/NavFullscreen';
 import { NavElement } from './common/types';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
     const navElements: Array<NavElement> = [
         { name: 'Projekter', path: '/' },
         { name: 'Teknologier', path: 'teknologier' },
-        { name: 'Kontakt', path: '/' }
+        { name: 'Kontakt', path: 'kontakt' }
     ]
 
     return (
@@ -33,6 +34,7 @@ function App() {
                 <div className='pt-5'>
                     <Outlet />
                 </div>
+            <Footer/>
             </div>
         </div>
     )
