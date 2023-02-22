@@ -7,7 +7,7 @@ export default function NavBar(
         { showNavFullscreen: boolean, toggleNavFullscreen: () => void, navElements: Array<NavElement> }) {
 
     return (
-        <div className={"flex flex-col w-full justify-items-center pl-10 pr-10 text-2xl transition-colors z-50 sticky top-0 "
+        <div className={"flex flex-col w-full justify-items-center px-10 text-2xl transition-colors z-50 sticky top-0 "
             + (showNavFullscreen ? 'text-black bg-none' : 'text-black bg-white')}>
             <div className="flex justify-between sm:grid sm:grid-cols-2 mt-6 mb-2">
                 <div className="flex justify-start gap-12 items-center">

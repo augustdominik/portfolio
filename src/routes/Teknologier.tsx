@@ -48,6 +48,11 @@ const technologyIcons: Array<TechnologyIcon> = [
         tooltip: 'FastAPI'
     },
     {
+        name: 'Docker',
+        iconSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+        tooltip: 'Docker'
+    },
+    {
         name: 'Python',
         iconSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
         tooltip: 'Python'

@@ -34,8 +34,8 @@ function App() {
                 <div className='pt-5'>
                     <Outlet />
                 </div>
-            <Footer/>
             </div>
+            <Footer/>
         </div>
     )
 }
