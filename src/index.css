@@ -8,8 +8,7 @@
     }
 
     .nav-full-element{
-        @apply cursor-pointer origin-left hover:underline hover:scale-105
-        transition-transform
+        @apply cursor-pointer origin-left hover:underline active:scale-95
     }
 
 }
