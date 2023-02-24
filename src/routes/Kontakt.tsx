@@ -13,7 +13,7 @@ export default function Kontakt(){
                     <img width='150px' src={ProfilePicture} className='rounded-2xl border-2 border-black'></img>
                     <div className="">
                         <h1 className='text-3xl mb-4'>Kontakt</h1>
-                            <p className='mb-4'>Skriv mig en email. Jeg svarer hurtigst muligt.</p>
+                            <p className='mb-4'>Kan du se mig være en del af dit hold, eller har du nogle spørgsmål, så skriv mig endelig en mail. Jeg svarer hurtigst muligt. Brug eventuelt nedenstående form. Dbh. August.</p>
                         <p className='mb-20'><span className='underline decoration-cyan-500 cursor-pointer'>augustdrp@gmail.com</span></p>
                     </div>
                 </div>

@@ -30,12 +30,12 @@ function App() {
                 toggleNavFullscreen={toggleNavFullscreen}
                 navElements={navElements}
             />
-            <div className='content px-10 max-w-3xl'>
+            <div className='content px-10 max-w-3xl flex-1'>
                 <div className='pt-5'>
                     <Outlet />
                 </div>
             </div>
-            <Footer/>
+            {/* <Footer/> */}
         </div>
     )
 }

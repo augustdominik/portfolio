@@ -18,12 +18,17 @@ const technologyIcons: Array<TechnologyIcon> = [
         tooltip: 'JavaScript'
     },
     {
+        name: 'ReactJS/React Native',
+        iconSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+        tooltip: 'ReactJS / React Native'
+    },
+    {
         name: 'Tailwind CSS',
         iconSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg',
         tooltip: 'Tailwind CSS'
     },
     {
-        name: 'CSS',
+        name: 'CSS3',
         iconSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
         tooltip: 'CSS'
     },
@@ -90,7 +95,7 @@ const technologyIcons: Array<TechnologyIcon> = [
 
 function TechnologyIconElement({ technologyIcon }: { technologyIcon: TechnologyIcon }) {
     return (
-        <div className="group cursor-pointer">
+        <div className="group cursor-pointer flex flex-col items-center justify-center">
             <img src={technologyIcon.iconSrc} 
                 className='group-hover:scale-110
                 transition-transform duration-75'>
