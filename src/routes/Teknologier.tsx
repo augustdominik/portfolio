@@ -119,7 +119,9 @@ export default function Teknologier() {
             whileInView={{ opacity: 1 }}>
             <div>
                 <h1 className='text-3xl mb-4'>Teknologier</h1>
-                <p className='mb-4'>Nedenfor ses de teknologier jeg har erfaring med.</p>
+                <p className='mb-4'>Jeg har erfaring med en bred vifte af teknologier, og er altid nysgerrig på at gå i dybden
+                og lære nye at kende. Nedenfor ses en samling af teknologier, jeg har brugt til at bygge alt fra
+                spil til webapplikationer.</p>
                 <div className='grid grid-cols-3 sm:grid-cols-6 gap-8 '>
                     {technologyIcons.map((technologyIcon, idx) =>
                     <TechnologyIconElement key={idx} technologyIcon={technologyIcon} />

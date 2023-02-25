@@ -41,37 +41,37 @@ const blogPosts: BlogPosts = [
     },
     {
         title: 'Denne webside',
-        description: 'En app til at øve sige på at høre akkorder. Lavet til mit hørelærehold på Københavns Musikskole.',
+        description: 'Jeg har programmeret denne side med React, TypeScript, og CSS frameworket TailwindCSS. Kildekoden kan tilgås på min websides github-repository. ',
         videoLink: VideoDenneWebside,
         imageLink: [MyBreakLogo],
         link: 'https://www.mybreak.dk/',
     },
     {
         title: 'YouTube-Kanal: GucioDevs',
-        description: 'Min YouTube-Kanal, hvor jeg har undervist...',
+        description: 'Min YouTube kanal med 20.000 abonnementer, hvor jeg primært har delt ud af de ting, jeg har lært på min vej som spiludvikler. Unity3D og C#.',
         videoLink: VideoGucioDevs,
         imageLink: [MyBreakLogo],
         link: 'https://www.mybreak.dk/',
     },
     {
-        title: 'Submarino - Vinder af DM i spiludvikling 2018',
-        description: 'Et spil jeg har lavet',
+        title: 'Vinder af DM i spiludvikling 2018 med spillet Submarino',
+        description: 'I 2018 deltog jeg i DM i spiludvikling for unge i Aalborg, og vandt denne gang publikumsprisen med mit spil Submarino.',
         imageLink: [GifSubmarino],
-        link: 'https://www.mybreak.dk/',
+        link: '#',
     },
     {
-        title: 'Vinder af DM i spiludvikling 2017',
-        description: 'endnu et spil jeg havde lavet',
+        title: 'Vinder af DM i spiludvikling 2017 med spillet Portals',
+        description: 'I 2017 deltog jeg i DM i spiludvikling for unge i Aalborg, og endte med at vinde dommerprisen med mit spil Portals.',
         imageLink: [],
         videoLink: VideoPortals,
         link: 'https://www.mybreak.dk/',
     },
-    {
-        title: 'En masse andre små spil',
-        description: 'endnu et spil jeg havde lavet',
-        imageLink: [GifPlaneGame],
-        link: 'https://www.mybreak.dk/',
-    },
+    // {
+    //     title: 'En masse andre små spil',
+    //     description: '',
+    //     imageLink: [GifPlaneGame],
+    //     link: 'https://www.mybreak.dk/',
+    // },
 ];
 
 function Post({ blogPost }: { blogPost: BlogPost }) {
