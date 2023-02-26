@@ -11,6 +11,11 @@
         @apply cursor-pointer origin-left hover:underline active:scale-95
     }
 
+    p{
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
 }
 
 #root{

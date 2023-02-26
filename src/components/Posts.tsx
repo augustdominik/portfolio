@@ -77,8 +77,13 @@ const blogPosts: BlogPosts = [
 function Post({ blogPost }: { blogPost: BlogPost }) {
     return (
         <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}>
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+                duration: 0.4,
+                ease: [0, 0.71, 0.2, 1.01]
+            }}
+        >
             <div className="w-full border-black border-2 rounded-md mb-4 items-center justify-center">
                 {blogPost.videoLink
                     ? <video

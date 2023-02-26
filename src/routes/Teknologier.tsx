@@ -115,14 +115,19 @@ function TechnologyIconElement({ technologyIcon }: { technologyIcon: TechnologyI
 export default function Teknologier() {
     return (
         <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}>
+                initial={{ opacity: 0, y:30}}
+                whileInView={{ opacity: 1, y:0 }}
+                transition={{
+                    duration: 0.4,
+                    ease: [0, 0.71, 0.2, 1.01]
+                }}
+        >
             <div>
                 <h1 className='text-3xl mb-4'>Teknologier</h1>
-                <p className='mb-4'>Jeg har erfaring med en bred vifte af teknologier, og er altid nysgerrig på at gå i dybden
-                og lære nye at kende. Nedenfor ses en samling af teknologier, jeg har brugt til at bygge alt fra
+                <p className='mb-10'>Jeg har erfaring med en bred vifte af teknologier, og er altid nysgerrig på at gå i dybden
+                og lære nye at kende. Nedenfor ses dem, jeg har brugt til at bygge alt fra
                 spil til webapplikationer.</p>
-                <div className='grid grid-cols-3 sm:grid-cols-6 gap-8 '>
+                <div className='grid grid-cols-3 sm:grid-cols-6 gap-8 mb-10'>
                     {technologyIcons.map((technologyIcon, idx) =>
                     <TechnologyIconElement key={idx} technologyIcon={technologyIcon} />
                                         )}

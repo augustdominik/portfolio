@@ -3,7 +3,6 @@ import { Outlet } from 'react-router-dom';
 import NavBar from "./components/NavBar"
 import NavFullscreen from './components/NavFullscreen';
 import { NavElement } from './common/types';
-import Footer from './components/Footer';
 
 function App() {
 

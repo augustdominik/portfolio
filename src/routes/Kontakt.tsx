@@ -6,8 +6,12 @@ export default function Kontakt() {
         <div>
             <motion.div
                 className="flex flex-col"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
+                initial={{ opacity: 0, y:30}}
+                whileInView={{ opacity: 1, y:0 }}
+                transition={{
+                    duration: 0.4,
+                    ease: [0, 0.71, 0.2, 1.01]
+                }}
             >
                 <div style={{ gridTemplateColumns: '1fr 2fr', gap: '12px' }}
                     className=' flex flex-col sm:grid'>
