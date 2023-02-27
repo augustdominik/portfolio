@@ -1,5 +1,6 @@
 import { AiOutlineMail } from 'react-icons/ai';
 import { AiOutlineGithub } from 'react-icons/ai';
+import { AiOutlineYoutube } from 'react-icons/ai';
 
 export default function Footer(){
     return(

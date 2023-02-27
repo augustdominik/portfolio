@@ -20,7 +20,7 @@ export default function Projekter() {
                 </p>
                 <p>
                     Jeg har en baggrund indenfor spiludvikling,
-                    men i dag er mit blik rettet mod webudvikling med fokus på både frontend- og backend-udvikling.
+                    men i dag er mit blik rettet mod webudvikling med fokus på både frontend og backend.
                 </p>
                 {/* <p> */}
                 {/*     Hvis du vil sammenarbejde eller har nogle spørgsmål, er du velkommen til at kontakte mig via min mail: <span className='underline decoration-cyan-500 cursor-pointer'>augustdrp@gmail.com</span>. */}
