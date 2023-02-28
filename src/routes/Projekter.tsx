@@ -1,5 +1,6 @@
 import { Posts } from '../components/Posts';
 import { motion } from 'framer-motion';
+import Hilsen from '../components/Hilsen';
 
 export default function Projekter() {
     return (
@@ -13,7 +14,7 @@ export default function Projekter() {
                     ease: [0, 0.71, 0.2, 1.01]
                 }}
             >
-                <h1 className='text-3xl mb-4'>Hej!</h1>
+                <Hilsen/>
                 <div>
                     <p>
                         Jeg er <span className='underline decoration-rose-500'>August Dominik Raaschou-Pedersen</span> - softwareudvikler med passion for at

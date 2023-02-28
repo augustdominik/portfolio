@@ -125,8 +125,11 @@ export default function Teknologier() {
             <div>
                 <h1 className='text-3xl mb-4'>Teknologier</h1>
                 <p className='mb-10'>Jeg har erfaring med en bred vifte af teknologier, og er altid nysgerrig på at gå i dybden
-                og lære nye at kende. Nedenfor ses dem, jeg har brugt til at bygge alt fra
-                spil til webapplikationer.</p>
+                og lære nye at kende. </p>
+                <p className="mb-10">
+                    Nedenfor ses dem, jeg har brugt til at bygge alt fra
+                    spil til webapplikationer.
+                </p>
                 <div className='grid grid-cols-3 sm:grid-cols-6 gap-8 mb-10'>
                     {technologyIcons.map((technologyIcon, idx) =>
                     <TechnologyIconElement key={idx} technologyIcon={technologyIcon} />
