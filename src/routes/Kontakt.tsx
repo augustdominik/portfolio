@@ -38,7 +38,7 @@ export default function Kontakt() {
                             </a>
                         </div>
                         <div className="link-icon">
-                            <a href="https://github.com/GucioDevs" target="_blank">
+                            <a href="https://github.com/augustdominik" target="_blank">
                                 <AiOutlineGithub size={iconSize} />
                             </a>
                         </div>
